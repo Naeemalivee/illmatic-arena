@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illmatic Arena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>ILLMATIC ARENA</h1>
+    <p>Arusha, Tanzania</p>
+</header>
+
+<main>
+    <section class="hero">
+        <h2>Experience The Biggest Shows</h2>
+        <p>Concerts. Culture. Entertainment.</p>
+        <button onclick="showEvents()">View Events</button>
+    </section>
+
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <div id="event-list">
+            Loading events...
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2030 Illmatic Arena</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
