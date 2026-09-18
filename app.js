@@ -18,9 +18,10 @@ async function showEvents() {
         .order("event_date", { ascending: true });
 
     if (error) {
-        console.error(error);
-        eventList.innerHTML = "Unable to load events.";
-        return;
+    console.error(error);
+    eventList.innerHTML =
+        "Database error: " + error.message;
+    return;
     }
 
     if (!data || data.length === 0) {
